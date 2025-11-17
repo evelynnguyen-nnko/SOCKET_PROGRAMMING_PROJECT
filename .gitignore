@@ -1,0 +1,5 @@
+.vscode/
+build/
+vcpkg/
+note.txt
+SOCKET_LOG_AI.docx
