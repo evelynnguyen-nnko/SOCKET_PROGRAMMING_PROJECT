@@ -29,3 +29,15 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     Boost::system
     Threads::Threads
 )
+
+
+# --------------------
+#  OPENCV
+# --------------------
+find_package(OpenCV REQUIRED)
+
+# Include directories của OpenCV
+target_include_directories(${PROJECT_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
+
+# Link OpenCV
+target_link_libraries(${PROJECT_NAME} PUBLIC ${OpenCV_LIBS})
